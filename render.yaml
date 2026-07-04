@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sec-filings-rag
+    runtime: docker
+    plan: free
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

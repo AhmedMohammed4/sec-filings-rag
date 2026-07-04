@@ -12,12 +12,13 @@ COPY ingest.py .
 COPY embed.py .
 COPY rag.py .
 COPY api.py .
-COPY evaluate.py .
+COPY start.sh .
 
-# Copy pre-built vector database and clean data
-COPY data/vectordb/ data/vectordb/
+# Copy clean data
 COPY data/clean/ data/clean/
+
+RUN chmod +x start.sh
 
 EXPOSE 8000
 
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["./start.sh"]
