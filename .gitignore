@@ -1,7 +1,6 @@
 .venv/
 __pycache__/
 data/raw/
-data/vectordb/
 *.pyc
 .env
 frontend/node_modules/
