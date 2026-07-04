@@ -2,11 +2,13 @@
 
 import os
 import sys
+import time
+from collections import defaultdict
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
@@ -17,6 +19,19 @@ from rag import SecRAG
 from config import COMPANIES
 
 rag_instance: SecRAG = None
+
+# Rate limiting: max requests per IP per minute
+RATE_LIMIT = int(os.getenv("RATE_LIMIT", "5"))
+rate_tracker: dict[str, list[float]] = defaultdict(list)
+
+
+def check_rate_limit(ip: str):
+    now = time.time()
+    # Clean old entries
+    rate_tracker[ip] = [t for t in rate_tracker[ip] if now - t < 60]
+    if len(rate_tracker[ip]) >= RATE_LIMIT:
+        raise HTTPException(status_code=429, detail="Too many requests. Try again in a minute.")
+    rate_tracker[ip].append(now)
 
 
 @asynccontextmanager
@@ -47,10 +62,8 @@ app.add_middleware(
 )
 
 
-# --- Request/Response models ---
-
 class AskRequest(BaseModel):
-    question: str = Field(..., min_length=3, max_length=1000, description="Question about SEC filings")
+    question: str = Field(..., min_length=3, max_length=500, description="Question about SEC filings")
     ticker: str | None = Field(None, description="Optional ticker to filter results (e.g. AAPL)")
 
 
@@ -71,27 +84,23 @@ class CompanyInfo(BaseModel):
     cik: str
 
 
-# --- Routes ---
-
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    stats = rag_instance.get_stats() if rag_instance else {}
+    return {"status": "ok", **stats}
 
 
 @app.get("/companies", response_model=list[CompanyInfo])
 async def list_companies():
-    """List all companies with available filings."""
     return [{"ticker": ticker, "cik": cik} for ticker, cik in sorted(COMPANIES.items())]
 
 
 @app.get("/filings/{ticker}")
 async def list_filings(ticker: str):
-    """List available filings for a company."""
     ticker = ticker.upper()
     if ticker not in COMPANIES:
         raise HTTPException(status_code=404, detail=f"Unknown ticker: {ticker}")
 
-    # Query ChromaDB for unique filings for this ticker
     results = rag_instance.collection.get(
         where={"ticker": ticker},
         include=["metadatas"],
@@ -114,39 +123,25 @@ async def list_filings(ticker: str):
 
 
 @app.post("/ask", response_model=AskResponse)
-async def ask(request: AskRequest):
-    """Ask a question about SEC filings."""
+async def ask(request: AskRequest, req: Request):
+    # Rate limit by IP
+    client_ip = req.client.host if req.client else "unknown"
+    check_rate_limit(client_ip)
+
     ticker = request.ticker.upper() if request.ticker else None
 
     if ticker and ticker not in COMPANIES:
         raise HTTPException(status_code=400, detail=f"Unknown ticker: {ticker}")
 
     try:
-        # Retrieve chunks
+        # Retrieve chunks (for sources display)
         chunks = rag_instance.retrieve(request.question, ticker=ticker)
 
         if not chunks:
             raise HTTPException(status_code=404, detail="No relevant documents found")
 
-        # Build context and get answer
-        context = rag_instance.build_context(chunks)
-
-        user_message = f"""Context from SEC filings:
-
-{context}
-
----
-
-Question: {request.question}"""
-
-        response = rag_instance.client.messages.create(
-            model=os.getenv("LLM_MODEL", "claude-sonnet-4-6"),
-            max_tokens=1500,
-            system=rag_instance.SYSTEM_PROMPT if hasattr(rag_instance, 'SYSTEM_PROMPT') else "You are a financial analyst assistant. Answer questions using only the provided SEC filing context. Cite sources using [TICKER FORM DATE] format.",
-            messages=[{"role": "user", "content": user_message}],
-        )
-
-        answer = response.content[0].text
+        # Get answer (uses cache + cost tracking internally)
+        answer = rag_instance.ask(request.question, ticker=ticker)
 
         # Build sources list
         seen_sources = set()
