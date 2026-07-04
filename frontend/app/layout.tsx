@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SEC Filings RAG",
-  description: "Ask natural language questions about SEC 10-K filings",
+  title: "SEC Filings - Query 10-K Reports",
+  description: "Ask natural language questions about SEC 10-K filings from top public companies",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-bg-primary">{children}</body>
     </html>
   );
 }
