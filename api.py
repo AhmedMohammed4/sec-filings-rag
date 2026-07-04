@@ -21,16 +21,16 @@ from config import COMPANIES
 rag_instance: SecRAG = None
 
 # Rate limiting: max requests per IP per minute
-RATE_LIMIT = int(os.getenv("RATE_LIMIT", "5"))
+RATE_LIMIT = int(os.getenv("RATE_LIMIT", "3"))
 rate_tracker: dict[str, list[float]] = defaultdict(list)
 
 
 def check_rate_limit(ip: str):
     now = time.time()
-    # Clean old entries
-    rate_tracker[ip] = [t for t in rate_tracker[ip] if now - t < 60]
+    # Clean old entries (24 hour window)
+    rate_tracker[ip] = [t for t in rate_tracker[ip] if now - t < 86400]
     if len(rate_tracker[ip]) >= RATE_LIMIT:
-        raise HTTPException(status_code=429, detail="Too many requests. Try again in a minute.")
+        raise HTTPException(status_code=429, detail="You've used all 3 questions for today. Come back tomorrow!")
     rate_tracker[ip].append(now)
 
 
