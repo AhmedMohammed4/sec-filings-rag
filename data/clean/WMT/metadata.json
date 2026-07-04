@@ -1,0 +1,16 @@
+[
+  {
+    "ticker": "WMT",
+    "form": "10-K",
+    "filing_date": "2026-03-13",
+    "accession": "0000104169-26-000055",
+    "filename": "10-K_2026-03-13.txt"
+  },
+  {
+    "ticker": "WMT",
+    "form": "10-K",
+    "filing_date": "2025-03-14",
+    "accession": "0000104169-25-000021",
+    "filename": "10-K_2025-03-14.txt"
+  }
+]

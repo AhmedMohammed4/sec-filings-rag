@@ -1,0 +1,16 @@
+[
+  {
+    "ticker": "AMZN",
+    "form": "10-K",
+    "filing_date": "2026-02-06",
+    "accession": "0001018724-26-000004",
+    "filename": "10-K_2026-02-06.txt"
+  },
+  {
+    "ticker": "AMZN",
+    "form": "10-K",
+    "filing_date": "2025-02-07",
+    "accession": "0001018724-25-000004",
+    "filename": "10-K_2025-02-07.txt"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "ticker": "JNJ",
+    "form": "10-K",
+    "filing_date": "2026-02-11",
+    "accession": "0000200406-26-000016",
+    "filename": "10-K_2026-02-11.txt"
+  },
+  {
+    "ticker": "JNJ",
+    "form": "10-K",
+    "filing_date": "2025-02-13",
+    "accession": "0000200406-25-000038",
+    "filename": "10-K_2025-02-13.txt"
+  }
+]

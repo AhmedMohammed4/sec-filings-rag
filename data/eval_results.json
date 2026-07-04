@@ -1,0 +1,1025 @@
+[
+  {
+    "top_k": 5,
+    "use_filter": false,
+    "ticker_accuracy": 1.0,
+    "keyword_recall": 0.875,
+    "per_question": [
+      {
+        "question": "What are Apple's main risk factors?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much revenue did Tesla generate?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is NVIDIA's data center revenue?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What did Meta say about artificial intelligence?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 0.8,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "machine learning"
+        ]
+      },
+      {
+        "question": "How many employees does Amazon have?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 1,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "personnel",
+          "workforce",
+          "headcount"
+        ]
+      },
+      {
+        "question": "What is Microsoft's cloud revenue?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "What legal proceedings is Google facing?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is JPMorgan's net interest income?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What are Johnson & Johnson's major product segments?",
+        "expected_ticker": "JNJ",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "pharmaceutical"
+        ]
+      },
+      {
+        "question": "How many stores does Walmart operate?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Tesla's automotive gross margin?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much did NVIDIA spend on research and development?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 0.8,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "r&d"
+        ]
+      },
+      {
+        "question": "What are Meta's daily active users?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "dau"
+        ]
+      },
+      {
+        "question": "What is Apple's services revenue?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 0.8,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What cybersecurity risks does Amazon face?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 0.4,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Walmart's e-commerce strategy?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 5,
+        "keywords_missing": [
+          "e-commerce"
+        ]
+      },
+      {
+        "question": "How much long-term debt does Microsoft have?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 0.2,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Google's advertising revenue breakdown?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What environmental initiatives does Tesla mention?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 0.8,
+        "keywords_found": 5,
+        "keywords_total": 6,
+        "keywords_missing": [
+          "climate"
+        ]
+      },
+      {
+        "question": "What is JPMorgan's total assets?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      }
+    ]
+  },
+  {
+    "top_k": 8,
+    "use_filter": false,
+    "ticker_accuracy": 1.0,
+    "keyword_recall": 0.9027777777777778,
+    "per_question": [
+      {
+        "question": "What are Apple's main risk factors?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much revenue did Tesla generate?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is NVIDIA's data center revenue?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What did Meta say about artificial intelligence?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 0.5,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How many employees does Amazon have?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "workforce",
+          "headcount"
+        ]
+      },
+      {
+        "question": "What is Microsoft's cloud revenue?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "What legal proceedings is Google facing?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 0.625,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is JPMorgan's net interest income?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What are Johnson & Johnson's major product segments?",
+        "expected_ticker": "JNJ",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "pharmaceutical"
+        ]
+      },
+      {
+        "question": "How many stores does Walmart operate?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Tesla's automotive gross margin?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much did NVIDIA spend on research and development?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "r&d"
+        ]
+      },
+      {
+        "question": "What are Meta's daily active users?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "dau"
+        ]
+      },
+      {
+        "question": "What is Apple's services revenue?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What cybersecurity risks does Amazon face?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 0.375,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Walmart's e-commerce strategy?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 5,
+        "keywords_missing": [
+          "e-commerce"
+        ]
+      },
+      {
+        "question": "How much long-term debt does Microsoft have?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 0.125,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Google's advertising revenue breakdown?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What environmental initiatives does Tesla mention?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 0.875,
+        "keywords_found": 5,
+        "keywords_total": 6,
+        "keywords_missing": [
+          "climate"
+        ]
+      },
+      {
+        "question": "What is JPMorgan's total assets?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      }
+    ]
+  },
+  {
+    "top_k": 12,
+    "use_filter": false,
+    "ticker_accuracy": 1.0,
+    "keyword_recall": 0.9166666666666666,
+    "per_question": [
+      {
+        "question": "What are Apple's main risk factors?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 0.9166666666666666,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much revenue did Tesla generate?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 0.9166666666666666,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is NVIDIA's data center revenue?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What did Meta say about artificial intelligence?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 0.4166666666666667,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How many employees does Amazon have?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "workforce",
+          "headcount"
+        ]
+      },
+      {
+        "question": "What is Microsoft's cloud revenue?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 0.9166666666666666,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "What legal proceedings is Google facing?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 0.5833333333333334,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is JPMorgan's net interest income?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What are Johnson & Johnson's major product segments?",
+        "expected_ticker": "JNJ",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How many stores does Walmart operate?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Tesla's automotive gross margin?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much did NVIDIA spend on research and development?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 0.9166666666666666,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "r&d"
+        ]
+      },
+      {
+        "question": "What are Meta's daily active users?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "dau"
+        ]
+      },
+      {
+        "question": "What is Apple's services revenue?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 0.75,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What cybersecurity risks does Amazon face?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 0.25,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Walmart's e-commerce strategy?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 5,
+        "keywords_missing": [
+          "e-commerce"
+        ]
+      },
+      {
+        "question": "How much long-term debt does Microsoft have?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 0.16666666666666666,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Google's advertising revenue breakdown?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 0.6666666666666666,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What environmental initiatives does Tesla mention?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 0.8333333333333334,
+        "keywords_found": 5,
+        "keywords_total": 6,
+        "keywords_missing": [
+          "climate"
+        ]
+      },
+      {
+        "question": "What is JPMorgan's total assets?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      }
+    ]
+  },
+  {
+    "top_k": 5,
+    "use_filter": true,
+    "ticker_accuracy": 1.0,
+    "keyword_recall": 0.8194444444444444,
+    "per_question": [
+      {
+        "question": "What are Apple's main risk factors?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much revenue did Tesla generate?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is NVIDIA's data center revenue?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What did Meta say about artificial intelligence?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "machine learning"
+        ]
+      },
+      {
+        "question": "How many employees does Amazon have?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 1,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "personnel",
+          "workforce",
+          "headcount"
+        ]
+      },
+      {
+        "question": "What is Microsoft's cloud revenue?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "What legal proceedings is Google facing?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is JPMorgan's net interest income?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What are Johnson & Johnson's major product segments?",
+        "expected_ticker": "JNJ",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "pharmaceutical"
+        ]
+      },
+      {
+        "question": "How many stores does Walmart operate?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Tesla's automotive gross margin?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much did NVIDIA spend on research and development?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "r&d"
+        ]
+      },
+      {
+        "question": "What are Meta's daily active users?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "dau"
+        ]
+      },
+      {
+        "question": "What is Apple's services revenue?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What cybersecurity risks does Amazon face?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "breach"
+        ]
+      },
+      {
+        "question": "What is Walmart's e-commerce strategy?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 5,
+        "keywords_missing": [
+          "e-commerce"
+        ]
+      },
+      {
+        "question": "How much long-term debt does Microsoft have?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "debt",
+          "borrowing"
+        ]
+      },
+      {
+        "question": "What is Google's advertising revenue breakdown?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What environmental initiatives does Tesla mention?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 6,
+        "keywords_missing": [
+          "emission",
+          "climate"
+        ]
+      },
+      {
+        "question": "What is JPMorgan's total assets?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      }
+    ]
+  },
+  {
+    "top_k": 8,
+    "use_filter": true,
+    "ticker_accuracy": 1.0,
+    "keyword_recall": 0.8333333333333334,
+    "per_question": [
+      {
+        "question": "What are Apple's main risk factors?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much revenue did Tesla generate?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is NVIDIA's data center revenue?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What did Meta say about artificial intelligence?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "machine learning"
+        ]
+      },
+      {
+        "question": "How many employees does Amazon have?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "workforce",
+          "headcount"
+        ]
+      },
+      {
+        "question": "What is Microsoft's cloud revenue?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "What legal proceedings is Google facing?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is JPMorgan's net interest income?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What are Johnson & Johnson's major product segments?",
+        "expected_ticker": "JNJ",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "pharmaceutical"
+        ]
+      },
+      {
+        "question": "How many stores does Walmart operate?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 4,
+        "keywords_missing": []
+      },
+      {
+        "question": "What is Tesla's automotive gross margin?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      },
+      {
+        "question": "How much did NVIDIA spend on research and development?",
+        "expected_ticker": "NVDA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 3,
+        "keywords_missing": [
+          "r&d"
+        ]
+      },
+      {
+        "question": "What are Meta's daily active users?",
+        "expected_ticker": "META",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "dau"
+        ]
+      },
+      {
+        "question": "What is Apple's services revenue?",
+        "expected_ticker": "AAPL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 2,
+        "keywords_missing": []
+      },
+      {
+        "question": "What cybersecurity risks does Amazon face?",
+        "expected_ticker": "AMZN",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "breach"
+        ]
+      },
+      {
+        "question": "What is Walmart's e-commerce strategy?",
+        "expected_ticker": "WMT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 5,
+        "keywords_missing": [
+          "e-commerce"
+        ]
+      },
+      {
+        "question": "How much long-term debt does Microsoft have?",
+        "expected_ticker": "MSFT",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 2,
+        "keywords_total": 4,
+        "keywords_missing": [
+          "debt",
+          "borrowing"
+        ]
+      },
+      {
+        "question": "What is Google's advertising revenue breakdown?",
+        "expected_ticker": "GOOGL",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 5,
+        "keywords_total": 5,
+        "keywords_missing": []
+      },
+      {
+        "question": "What environmental initiatives does Tesla mention?",
+        "expected_ticker": "TSLA",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 4,
+        "keywords_total": 6,
+        "keywords_missing": [
+          "emission",
+          "climate"
+        ]
+      },
+      {
+        "question": "What is JPMorgan's total assets?",
+        "expected_ticker": "JPM",
+        "ticker_found": true,
+        "ticker_pct": 1.0,
+        "keywords_found": 3,
+        "keywords_total": 3,
+        "keywords_missing": []
+      }
+    ]
+  }
+]

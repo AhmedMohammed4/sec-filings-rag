@@ -1,0 +1,10 @@
+anthropic
+beautifulsoup4
+chromadb
+fastapi
+lxml
+python-dotenv
+requests
+sentence-transformers
+tqdm
+uvicorn
